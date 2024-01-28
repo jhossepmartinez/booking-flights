@@ -7,7 +7,9 @@ function App() {
     return (
         <div className="font-montserrat m-3">
             <Header />
-            <SearchForm />
+            <div className="mb-6">
+                <SearchForm />
+            </div>
             <PopularDestinations />
         </div>
     )
