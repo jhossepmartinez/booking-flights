@@ -1,6 +1,7 @@
 import React from 'react'
 import { GiCommercialAirplane } from "react-icons/gi";
 import { BiSolidPackage } from "react-icons/bi";
+import { Link } from "react-router-dom"
 
 export default function Header() {
     return (
@@ -19,7 +20,7 @@ export default function Header() {
                         <GiCommercialAirplane />
                     </div>
                     <div>
-                        Vuelos
+                        <Link to="flights">Vuelos</Link>
                     </div>
                 </div>
             </div>
