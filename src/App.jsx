@@ -1,17 +1,18 @@
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import './App.css'
-import Header from './components/Header/Header'
-import PopularDestinations from './components/PopularDestinations/PopularDestinations'
-import SearchForm from './components/SearchForm/SearchForm'
+import Home from './components/Home/Home'
+import Flights from './components/Flights/Flights'
+
+// Router
 
 function App() {
     return (
-        <div className="font-montserrat m-3">
-            <Header />
-            <div className="mb-6">
-                <SearchForm />
-            </div>
-            <PopularDestinations />
-        </div>
+        <BrowserRouter>        
+            <Routes>
+                <Route path="/" element={<Home />}/>
+                <Route path="/flights" element={<Flights />}/>
+            </Routes>
+        </BrowserRouter>        
     )
 }
 
