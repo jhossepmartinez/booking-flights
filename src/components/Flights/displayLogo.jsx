@@ -15,5 +15,11 @@ export default function renderAirlineLogo(airlineName) {
                 src="../../../public/united-airlines.svg"
             />
         );
+    } else {
+        return (
+        <div className="text-sm font-medium">
+                {airlineName}
+            </div>
+        )
     }
 }
